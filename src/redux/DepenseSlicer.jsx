@@ -3,12 +3,12 @@ import { createSlice } from "@reduxjs/toolkit";
 const DepenseSlice = createSlice({
   name: "depenses",
   initialState: {
-    budget: 123,
+    budget: 0,
     depenses: [
-      {
-        titre: "Voiture",
-        montant: 123,
-      },
+      // {
+      //   titre: "Voiture",
+      //   montant: 123,
+      // },
     ],
   }, 
   reducers: {
@@ -17,7 +17,7 @@ const DepenseSlice = createSlice({
 
     },
     addbdg : (state,action)=>{
-        state.budget += Number(action.budget)
+        state.budget += action.payload
     }
   },
 });

@@ -49,6 +49,7 @@ grid-area: l;
   gap: 10px;
 }
 .stats{
+  padding: 10px;
   margin-top: 25px;
   color: white;
 background-color: black;  
