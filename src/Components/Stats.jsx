@@ -9,10 +9,10 @@ const total = depenses.reduce((sum,d)=>d.montant,0);
 
 
   return (
-    <div>
-        <h1>Budget : {budget}</h1>
-        <h1> Depenses:  {total}</h1>
-        <h1> Ecart : {total - budget}</h1>
+    <div className='stats'>
+        <p>Budget : {budget}</p>
+        <p> Depenses:  {total}</p>
+        <p> Ecart : {total - budget}</p>
     </div>
   )
 }

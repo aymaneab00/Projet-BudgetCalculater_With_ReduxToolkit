@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 export default function ListeDepenses() {
   const depenses = useSelector((state) => state.depenses.depenses);
   return (
-    <table border={1}>
+    <table border={1} className="ldp">
         <thead>
 
       <tr>

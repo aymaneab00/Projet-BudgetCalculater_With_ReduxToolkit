@@ -6,7 +6,7 @@ export default function AddBudget() {
     const [bdg,setbdg]=useState(0)
     const dispatch = useDispatch();
   return (
-    <form onSubmit={(e)=>e.preventDefault()}>
+    <form onSubmit={(e)=>e.preventDefault()} className='Add-budget'>
 
 <input type="text" placeholder='Budget' value={bdg} onChange={(e)=>setbdg(Number(e.target.value))} />
 

@@ -1,38 +1,60 @@
-.App {
+header{
+  color: white;
   text-align: center;
+  background-color: black;
+  grid-area: h;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  padding: 10px;
+  display: grid;
+grid-gap: 10px;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: 40px auto 40px;
+  grid-template: 
+  'h h h h h h h h h h h h'
+  'b b b d d d l l l l l l'
+  'f f f f f f f f f f f f'
+  ;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ldp{
+grid-area: l;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Add-budget{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  grid-area: b;
+  gap: 10px;
+
+}
+.Add-budget input{
+  width: 50%;
+}
+.Add-budget button {
+  width: 50%;
+}
+.Add-depense input{
+  width: 50%;
+}
+.Add-depense button {
+  width: 50%;
+}
+
+.Add-depense{
+  display: flex;
+  flex-direction: column;
+  grid-area: d;
+  justify-content: center;
+  gap: 10px;
+}
+.stats{
+  margin-top: 25px;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+background-color: black;  
+grid-area: f;
+  display: flex;
+  flex-direction: row;
+align-items: center;
+justify-content: space-between;
 }
